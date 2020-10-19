@@ -55,6 +55,11 @@ const baseFormulas = [
     title: tf('formula.concat'),
     render: ary => ary.join(''),
   },
+  {
+    key: 'SAYHELLO',
+    title: tf('formula.sayhello'),
+    render: ary => { console.log("ary:" +ary); return `hello ${ary}`},
+  },
   /* support:  1 + A1 + B2 * 3
   {
     key: 'DIVIDE',

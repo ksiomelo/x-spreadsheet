@@ -5,6 +5,7 @@ import { numberCalc } from './helper';
 // src: AVERAGE(SUM(A1,A2), B1) + 50 + B20
 // return: [A1, A2], SUM[, B1],AVERAGE,50,+,B20,+
 const infixExprToSuffixExpr = (src) => {
+  console.log("evaluated: "+src)
   const operatorStack = [];
   const stack = [];
   let subStrs = []; // SUM, A1, B2, 50 ...
